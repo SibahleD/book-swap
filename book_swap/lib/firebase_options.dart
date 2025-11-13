@@ -4,16 +4,7 @@ import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
-/// Default [FirebaseOptions] for use with your Firebase apps.
-///
-/// Example:
-/// ```dart
-/// import 'firebase_options.dart';
-/// // ...
-/// await Firebase.initializeApp(
-///   options: DefaultFirebaseOptions.currentPlatform,
-/// );
-/// ```
+/// Default Firebase options for different platforms.
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -40,49 +31,50 @@ class DefaultFirebaseOptions {
     }
   }
 
+  /// Firebase options for web platform
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDa82km4NuAUUxGB8b0TsUm7ttoHdoLU_4',
-    appId: '1:1057950452705:web:d74752345a1c98848aa0a0',
-    messagingSenderId: '1057950452705',
-    projectId: 'bookswap-ca2e5',
-    authDomain: 'bookswap-ca2e5.firebaseapp.com',
-    storageBucket: 'bookswap-ca2e5.firebasestorage.app',
-    measurementId: 'G-9MJ8MSC0RJ',
+    apiKey: 'AIzaSyCkWUTt39LOi9uuvngiRdNV7_790OYF7H0',
+    appId: '1:473750465015:web:083dcc7edb466964b0a6f2',
+    messagingSenderId: '473750465015',
+    projectId: 'todolist-a20e7',
+    authDomain: 'todolist-a20e7.firebaseapp.com',
+    storageBucket: 'todolist-a20e7.firebasestorage.app',
+    measurementId: 'G-0DMFHQTF33',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB_abJy-geIZhsHZdfU351MoqNgV78ElPo',
-    appId: '1:1057950452705:android:f06b0df416aaa93a8aa0a0',
-    messagingSenderId: '1057950452705',
-    projectId: 'bookswap-ca2e5',
-    storageBucket: 'bookswap-ca2e5.firebasestorage.app',
+    apiKey: 'AIzaSyCAift9aDEQhj7PDPmrpvjrtIbWVeuDTJ8',
+    appId: '1:336234675762:android:b3ec420ed0bac7016fc62b',
+    messagingSenderId: '336234675762',
+    projectId: 'bookswapapp-9d4fc',
+    storageBucket: 'bookswapapp-9d4fc.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBgynlHEYTJroXAK2qHLpIlY5RLeeruyFM',
-    appId: '1:1057950452705:ios:2e1856225496733e8aa0a0',
-    messagingSenderId: '1057950452705',
-    projectId: 'bookswap-ca2e5',
-    storageBucket: 'bookswap-ca2e5.firebasestorage.app',
-    iosBundleId: 'com.example.bookSwap',
+    apiKey: 'AIzaSyBysS-1hXuNP1RvrT3Q9iZLJymSpaLAKro',
+    appId: '1:473750465015:ios:1e995d4a1037bd7bb0a6f2',
+    messagingSenderId: '473750465015',
+    projectId: 'todolist-a20e7',
+    storageBucket: 'todolist-a20e7.firebasestorage.app',
+    iosBundleId: 'com.example.bookSwapApp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBgynlHEYTJroXAK2qHLpIlY5RLeeruyFM',
-    appId: '1:1057950452705:ios:2e1856225496733e8aa0a0',
-    messagingSenderId: '1057950452705',
-    projectId: 'bookswap-ca2e5',
-    storageBucket: 'bookswap-ca2e5.firebasestorage.app',
-    iosBundleId: 'com.example.bookSwap',
+    apiKey: 'AIzaSyBysS-1hXuNP1RvrT3Q9iZLJymSpaLAKro',
+    appId: '1:473750465015:ios:1e995d4a1037bd7bb0a6f2',
+    messagingSenderId: '473750465015',
+    projectId: 'todolist-a20e7',
+    storageBucket: 'todolist-a20e7.firebasestorage.app',
+    iosBundleId: 'com.example.bookSwapApp',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDa82km4NuAUUxGB8b0TsUm7ttoHdoLU_4',
-    appId: '1:1057950452705:web:24da5a069970caaa8aa0a0',
-    messagingSenderId: '1057950452705',
-    projectId: 'bookswap-ca2e5',
-    authDomain: 'bookswap-ca2e5.firebaseapp.com',
-    storageBucket: 'bookswap-ca2e5.firebasestorage.app',
-    measurementId: 'G-E5PRQQ4LXV',
+    apiKey: 'AIzaSyCkWUTt39LOi9uuvngiRdNV7_790OYF7H0',
+    appId: '1:473750465015:web:a0977182c6052891b0a6f2',
+    messagingSenderId: '473750465015',
+    projectId: 'todolist-a20e7',
+    authDomain: 'todolist-a20e7.firebaseapp.com',
+    storageBucket: 'todolist-a20e7.firebasestorage.app',
+    measurementId: 'G-7GSZZH1YRD',
   );
 }

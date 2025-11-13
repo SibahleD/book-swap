@@ -1,6 +1,6 @@
 {
-    "name": "book_swap",
-    "short_name": "book_swap",
+    "name": "book_swap_app",
+    "short_name": "book_swap_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
